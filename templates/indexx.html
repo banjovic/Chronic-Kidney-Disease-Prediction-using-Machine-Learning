@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< Updated upstream
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+=======
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+>>>>>>> Stashed changes
 
         <!-- Bootstrap CSS -->
 		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -75,6 +82,7 @@ body {
        
 </style>
 
+<<<<<<< Updated upstream
 <body>
 
 <h1>Chronic Kidney Disease Prediction</h1>
@@ -180,4 +188,191 @@ body {
 <h3>{{ result }}</h3>
 
 </body>
+=======
+    <h1>Chronic Kidney Disease Prediction</h1>
+    <div class="container">
+      <div>
+        <!-- Html form which will get all the values from user -->
+        <div  style="background-color:#E6E6FA" >
+
+          <label for="age">Enter your age:</label><br>
+          <input type="text" value="24" id="age" name="age" placeholder="65" required="required"><br>
+          <label for="blood_pressure">Enter your blood pressure: </label><br>
+          <input type="text" id="blood_pressure" name="blood_pressure" placeholder="80.0" required="required"><br>
+          <label for="specific_gravity">Specific gravity of Urine: </label><br>
+          <input type="text" id="specific_gravity" name="specific_gravity" placeholder="1.010" required="required"><br>
+          <label for="albumin">Enter albumin level:</label><br>
+          <input type="text" id="albumin" name="albumin" placeholder="2.0" required="required"><br>
+          <label for="sugar">Enter sugar level:</label><br>
+          <input type="text" id="sugar" name="sugar" placeholder="3.0" required="required"><br>
+          <label for="blood_glucose_random">Enter blood glucose level:</label><br>
+          <input type="text" id="blood_glucose_random" name="blood_glucose_random" placeholder="121.0" required="required"><br>
+          <label for="blood_urea">Enter blood Urea level</label><br>
+          <input type="text" id="blood_urea" name="blood_urea" placeholder="18.0" required="required"><br>
+          <label for="serum_creatinine">What is your serum creatinine level:</label><br>
+          <input type="text" id="serum_creatinine" name="serum_creatinine" placeholder="3.8" required="required"><br>
+          <label for="haemoglobin"> </label>Enter haemoglobin level:</label><br>
+          <input type="text" id="haemoglobin" name="haemoglobin" placeholder="12.3" required="required"><br>
+          <label for="packed_cell_volume"> Enter PCV: </label> </label><br>
+          <input type="text" id="packed_cell_volume" name="packed_cell_volume" placeholder="36" required="required"><br>
+          <label for="red_blood_cell_count">Enter RBC count: </label><br>
+          <input type="text" id="red_blood_cell_count" name="red_blood_cell_count" placeholder="3.9" required="required"><br>
+          <label for="white_blood_cell_count">Enter WBC count: </label><br>
+          <input type="text" id="white_blood_cell_count" name="white_blood_cell_count" placeholder="7500" required="required"><br>
+          <label for="sodium">Enter Sodium: </label><br>
+          <input type="text" id="sodium" name="sodium" placeholder="25" required="required"><br> 
+          <label for="potassium">Enter Potassium: </label><br>
+          <input type="text" id="potassium" name="potassium" placeholder="25" required="required"><br> 
+          <!-- drop down options are provided for the categorical features -->
+          <label for="red_blood_cell">RBC count</label><br>
+          <select id="red_blood_cell" name="red_blood_cell">
+            <option value="" selected disabled>Please select an option...</option>
+            <option value="normal">Normal</option>
+            <option value="abnormal">Abnormal</option>
+          </select><br>
+          <label for="pus_cell">Pus cell level</label><br>
+          <select id="pus_cell" name="pus_cell" required="required">
+            <option value="" selected disabled>Please select an option...</option>
+            <option value="normal">Normal</option>
+            <option value="abnormal">Abnormal</option>
+          </select><br>
+          <label for="pus_cell_clumps">Are pus cell clumps present?</label><br>
+          <select id="pus_cell_clumps" name="pus_cell_clumps" required="required">
+            <option value="" selected disabled>Please select an option...</option>
+            <option value="present">Yes</option>
+            <option value="notpresent">No</option>
+          </select><br>
+          <label for="bacteria">Is bacteria present in your kidney? </label><br>
+          <select id="bacteria" name="bacteria" required="required">
+            <option value="" selected disabled>Please select an option...</option>
+            <option value="present">Yes</option>
+            <option value="notpresent">No</option>
+          </select> <br>
+          <label for="hypertension">Are you hypertensive? </label><br>
+          <select id="hypertension" name="hypertension" required="required">
+            <option value="" selected disabled>Please select an option...</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select> <br>
+          <label for="diabetes_mellitus">Are you diabetic? </label><br>
+          <select id="diabetes_mellitus" name="diabetes_mellitus" required="required">
+            <option value="" selected disabled>Please select an option...</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select> <br>
+          <label for="coronary_artery_disease">Do you have artery disease? </label><br>
+          <select id="coronary_artery_disease" name="coronary_artery_disease" required="required">
+            <option value="" selected disabled>Please select an option...</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select> <br>
+          <label for="appetite">What's your appetite like? </label><br>
+          <select id="appetite" name="appetite" required="required">
+            <option value="" selected disabled>Please select an option...</option>
+            <option value="good">Good</option>
+            <option value="poor">Poor</option>
+          </select> <br>
+          <label for="peda_edema">Any sign of feet or ankle swelling? </label><br>
+          <select id="peda_edema" name="peda_edema" required="required">
+            <option value="" selected disabled>Please select an option...</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select> <br>
+          <label for="aanemia">Are you anaemic? </label><br>
+          <select id="aanemia" name="aanemia" required="required">
+            <option value="" selected disabled>Please select an option...</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select> <br>
+              
+          <!-- submit button -->           
+          <input id="submit" type="submit" value="Result">
+            <!-- the predicted text -->
+          
+       
+          <h3 id="result">result</h3>
+        </div>
+      </div>
+    </div>
+
+    <script>
+     
+        
+        var submit = document.getElementById('submit');
+        var result = document.getElementById('result')
+        submit.onclick= function(){
+           try{ 
+        var age=Number(document.getElementById("age").value);
+        var blood_pressure=Number(document.getElementById("blood_pressure").value);
+        var specific_gravity=Number(document.getElementById("specific_gravity").value);
+        var albumin=Number(document.getElementById("albumin").value);
+        var sugar=Number(document.getElementById("sugar").value);
+        var blood_glucose_random=Number(document.getElementById("blood_glucose_random").value);
+        var blood_urea=Number(document.getElementById("blood_urea").value);
+        var serum_creatinine=Number(document.getElementById("serum_creatinine").value);
+        var haemoglobin=Number(document.getElementById("haemoglobin").value)
+        var packed_cell_volume=Number(document.getElementById("packed_cell_volume").value);
+        var red_blood_cell_count=Number(document.getElementById("red_blood_cell_count").value);
+        var white_blood_cell_count=Number(document.getElementById("white_blood_cell_count").value);
+        var sodium=Number(document.getElementById("sodium").value);
+        var potassium=Number(document.getElementById("potassium").value);
+        var red_blood_cells=document.getElementById("red_blood_cell").options[document.getElementById('red_blood_cell').selectedIndex].value;
+        var pus_cell=document.getElementById("pus_cell").value;
+        var pus_cell_clumps=document.getElementById("pus_cell_clumps").value;
+        var bacteria=document.getElementById("bacteria").value;
+        var hypertension=document.getElementById("hypertension").value;
+        var diabetes_mellitus=document.getElementById("diabetes_mellitus").value;
+        var coronary_artery_disease=document.getElementById("coronary_artery_disease").value;
+        var appetite=document.getElementById("appetite").value;
+        var peda_edema=document.getElementById("peda_edema").value;
+        var aanemia=document.getElementById("aanemia").value;
+       
+           fetch('http://ec2-3-86-80-181.compute-1.amazonaws.com:8000/predict', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          age: age,
+          blood_pressure: blood_pressure,
+          specific_gravity: specific_gravity,
+          albumin: albumin,
+          sugar: sugar,
+          red_blood_cells: red_blood_cells,
+          pus_cell: pus_cell,
+          pus_cell_clumps: pus_cell_clumps,
+          bacteria: bacteria,
+          blood_glucose_random: blood_glucose_random,
+          blood_urea: blood_urea,
+          serum_creatinine: serum_creatinine,
+          sodium: sodium,
+          potassium: potassium,
+          haemoglobin: haemoglobin,
+          packed_cell_volume: packed_cell_volume,
+          white_blood_cell_count: white_blood_cell_count,
+          red_blood_cell_count: red_blood_cell_count,
+          hypertension: hypertension,
+          diabetes_mellitus: diabetes_mellitus,
+          coronary_artery_disease: coronary_artery_disease,
+          appetite: appetite,
+          peda_edema:peda_edema,
+          aanemia: aanemia
+        })
+    }).then(res => {
+        return res.json()
+    })
+    .then(data => console.log(data))
+    .catch(error => console.log('ERROR MESSAGE'))
+  
+       }catch(error){
+console.log("Error found",error)
+      }
+ 
+        }
+      
+      
+ 
+    </script>
+  </body>
+>>>>>>> Stashed changes
 </html>
